@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello Page</title>
-        <link rel="stylesheet" type="text/css" href="Web Pages/resources/css/style.css">
+        <title>Welkom</title>
+        <link rel="stylesheet" type="text/css" href="http://users.hogent.be/~530534jp/style.css">
     </head>
     <body>
         <div id="wrapper">
