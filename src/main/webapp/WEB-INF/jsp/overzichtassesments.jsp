@@ -6,15 +6,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Overzicht assessments</title>
+        <title>Overzicht assessements</title>
     </head>
     <body>
-        <c:forEach var="item" items="${peers}">
+        <div id="wrapper">
+            <div id="menubar">Overzicht assessements</div>
+             <c:forEach var="item" items="${peers}">
             <p>${item.voor.name}</p>
             <c:forEach var="antw" items="${item.antwoorden}">
                 <p>  ${antw.antwoord}</p>
             </c:forEach>
-
         </c:forEach>
+        </div>
     </body>
 </html>

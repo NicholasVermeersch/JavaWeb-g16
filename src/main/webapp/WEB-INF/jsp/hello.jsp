@@ -17,10 +17,10 @@
         <c:url var="logoutUrl" value="/logout"/>
         <c:choose>
             <c:when test="${ingediend == 1}">
-                <button id="peer" href="<c:url value="peerassesment.htm"/>">Bekijk peerassesment</button>
+                <button id="peer"> <a  href="<c:url value="peerassesment.htm"/>">Bekijk peerassesment</a></button>   
             </c:when>
             <c:otherwise>
-                <button id="peer" href="<c:url value="peerassesment.htm"/>">+ Dien peerassesment in</button>
+                <button id="peer"> <a  href="<c:url value="peerassesment.htm"/>">+ Dien peerassesment in</a></button> 
             </c:otherwise>
         </c:choose>
         <form action="${logoutUrl}" method="post">

@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>PeerAssessment</h1>
-       <form:form method="POST" action="save.htm" modelAttribute="pw">
+       <form:form method="POST" action="save.htm"  modelAttribute="pw">
 
             <p><label>enthousiasme en participatie: </label>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
