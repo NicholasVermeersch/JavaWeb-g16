@@ -7,15 +7,16 @@
         <link rel="stylesheet" type="text/css" href="Web Pages/resources/css/style.css">
     </head>
     <body>
-        <h1>Message : ${message}</h1>
-        <h1>Username : ${username}</h1>
-        <h1>Group : ${groep}</h1>
-        <h1>Cursists :</h1>
+        <div id="wrapper">
+            <div id="menubar">${message}</div>
+        <div id="gebruiker">Welkom, ${username}</div>
+        <div id="groep">Groep : ${groep}
+            <h1>Cursists :</h1>
         ${cursisten}
-
+        </div>
         <c:url var="logoutUrl" value="/logout"/>
         <form action="${logoutUrl}" method="post">
-            <input type="submit" value="Log out" />
+            <input id="logoutbutton" type="submit" value="Log out" />
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>            
         </form>
 
@@ -27,5 +28,8 @@
                 <a href="<c:url value="peerassesment.htm"/>">Dien peerassesment in</a>
             </c:otherwise>
         </c:choose>
+            
+        </div>
+        
     </body>
 </html>

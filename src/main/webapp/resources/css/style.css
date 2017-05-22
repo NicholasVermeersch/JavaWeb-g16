@@ -63,3 +63,33 @@ h1{
 h3{
     text-align: center;
 }
+#wrapper{
+    margin:100px auto;
+    width: 500px;
+}
+#menubar{
+    width: 100%;
+    height:30px;
+    color:white;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#gebruiker{
+    width: 100%;
+    height:30px;
+    background-color:dimgrey;
+    color:white;
+    text-align: left;
+}
+
+#groep{
+    margin-top:20px;  
+}
+
+#logoutbutton{
+    color:white;
+    background-color: red;
+    border:none;
+    padding:8px;
+}
