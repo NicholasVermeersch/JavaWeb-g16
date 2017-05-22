@@ -21,12 +21,45 @@
 #login-box {
     width: 300px;
     padding: 20px;
-    margin: 100px auto;
+    margin: 50px auto;
     background: #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border: 1px solid #000;
+}
+#loginbody{
+    background-image: url(http://www.zorgnetwerktrento.be/sites/www.zorgnetwerktrento.be/files/styles/colorbox_large__1200x1200/public/media/jpg/68/1504_foto_trento_64.jpg?itok=f_aatcJU);
+    background-size:cover;
+}
+
+#loginbutton{
+    width:100%;
+    color:white;
+    background-color: skyblue;
+    border:none;
+    padding:8px;
+    margin-top:10px;
+}
+#logo{
+    margin:100px auto;
+    background-image:url(http://users.hogent.be/~530534jp/logo_giveaday-01.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;
+}
+
+#logininput{
+    width: 95%;
+    padding:5px;
+}
+
+#table{
+    width:100%;
 }
 h1{
     color:red;
+}
+
+h3{
+    text-align: center;
 }
