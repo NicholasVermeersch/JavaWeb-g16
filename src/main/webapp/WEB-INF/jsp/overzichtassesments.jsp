@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Your Assesments</title>
+        <title>Overzicht assessments</title>
     </head>
     <body>
         <c:forEach var="item" items="${peers}">

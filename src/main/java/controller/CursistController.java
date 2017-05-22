@@ -77,7 +77,7 @@ public class CursistController {
         cursistDao.update(cursist);
         
 
-        return "peerassesmentSucces";
+        return "overzichtassesments";
     }
 
     @RequestMapping(value = "/overzichtassesments", method = RequestMethod.GET)
