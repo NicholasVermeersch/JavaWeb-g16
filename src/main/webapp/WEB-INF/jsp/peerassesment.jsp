@@ -7,6 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>PeerAssessment</title>
+        <link rel="stylesheet" type="text/css" href="http://users.hogent.be/~530534jp/style.css">
     </head>
     <body>
         <h1>PeerAssessment</h1>
