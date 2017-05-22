@@ -13,8 +13,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                // enable in memory based authentication with a user named
-                // "user" and "admin"
+                
                 .inMemoryAuthentication()
                 .withUser("username").password("123456").roles("USER").and()
                 .withUser("wannes").password("123456").roles("USER");

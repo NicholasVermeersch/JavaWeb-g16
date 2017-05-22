@@ -1,8 +1,4 @@
-<%-- 
-    Document   : peerassesmentSucces
-    Created on : 20-May-2017, 10:46:54
-    Author     : Wannes
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

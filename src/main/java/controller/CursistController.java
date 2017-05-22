@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import domain.Cursist;
@@ -21,14 +16,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import service.CursistDao;
-import service.GenericDaoJpa;
-import service.JpaCursistDao;
 import service.PeerAssesmentDao;
 
-/**
- *
- * @author henrivdb
- */
+
 @Controller
 public class CursistController {
 
@@ -75,7 +65,7 @@ public class CursistController {
             System.out.println("test");
             return "peerassesment";
         }
-        //cursist uit de db halen
+       
         for (PeerAssesment p : pw.getPeerassesments()) {
             peerAssesmentDao.insert(p);
         }
@@ -85,7 +75,7 @@ public class CursistController {
         }
         cursist.setPeerassesments(pw.getPeerassesments());
         cursistDao.update(cursist);
-        //opslaan in db
+        
 
         return "peerassesmentSucces";
     }

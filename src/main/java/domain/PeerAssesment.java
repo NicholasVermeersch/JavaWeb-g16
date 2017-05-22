@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package domain;
 
 import java.io.Serializable;
@@ -20,10 +16,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-/**
- *
- * @author henrivdb
- */
+
 @Entity
 @NamedQueries({
     @NamedQuery(name = "PeerAssesment.getById", query = "SELECT p FROM PeerAssesment p WHERE p.voor.id = :id")})
@@ -82,7 +75,7 @@ public class PeerAssesment implements Serializable {
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+        
         if (!(object instanceof PeerAssesment)) {
             return false;
         }
