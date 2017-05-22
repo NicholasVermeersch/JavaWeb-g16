@@ -6,7 +6,7 @@
         <title>Welkom</title>
         <link rel="stylesheet" type="text/css" href="http://users.hogent.be/~530534jp/style.css">
     </head>
-    <body>
+    <body id="welcome">
         <div id="wrapper">
             <div id="menubar">${message}</div>
         <div id="gebruiker">Welkom, ${username}</div>
@@ -15,19 +15,20 @@
         ${cursisten}
         </div>
         <c:url var="logoutUrl" value="/logout"/>
+        <c:choose>
+            <c:when test="${ingediend == 1}">
+                <button id="peer" href="<c:url value="peerassesment.htm"/>">Bekijk peerassesment</button>
+            </c:when>
+            <c:otherwise>
+                <button id="peer" href="<c:url value="peerassesment.htm"/>">+ Dien peerassesment in</button>
+            </c:otherwise>
+        </c:choose>
         <form action="${logoutUrl}" method="post">
             <input id="logoutbutton" type="submit" value="Log out" />
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>            
         </form>
 
-        <c:choose>
-            <c:when test="${ingediend == 1}">
-                <a href="<c:url value="peerassesment.htm"/>">Bekijk peerassesment</a>
-            </c:when>
-            <c:otherwise>
-                <a href="<c:url value="peerassesment.htm"/>">Dien peerassesment in</a>
-            </c:otherwise>
-        </c:choose>
+        
             
         </div>
         
