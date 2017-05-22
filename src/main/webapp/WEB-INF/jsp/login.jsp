@@ -25,14 +25,14 @@
 
            <form name='loginForm' action="<c:url value='/login' />" method='POST'>
                <table id="table">
-                    <tr>
-                        <td><input id="logininput" placeholder="Gebruikersnaam" type='text' name='username' value=''></td>
+                    <tr id="x">
+                        <td id="y"><input id="logininput" placeholder="Gebruikersnaam" type='text' name='username' value=''></td>
                     </tr>
-                    <tr>
+                    <tr id="x">
                         <td><input id="logininput" placeholder="Wachtwoord" type='password' name='password' /></td>
                     </tr>
-                    <tr>
-                        <td><input id="loginbutton" name="submit" type="submit"
+                    <tr id="x">
+                        <td id="y"><input id="loginbutton" name="submit" type="submit"
                                                value="Log in" /></td>
                     </tr>
                 </table>

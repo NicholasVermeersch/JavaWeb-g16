@@ -68,13 +68,7 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#wrapper2{
-    margin:100px auto;
-    width: 2000px;
-    border: 1px solid black;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 #menubar{
     width: 100%;
     height:30px;
@@ -121,13 +115,20 @@ h3{
    background-size:cover;
 }
 
-#even{
-    background-color:skyblue;
-    
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#oneven{
-    background-color:background;
+th, td {
+    text-align: left;
+    padding: 8px;
 }
 
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: skyblue;
+    color: white;
+}
 
