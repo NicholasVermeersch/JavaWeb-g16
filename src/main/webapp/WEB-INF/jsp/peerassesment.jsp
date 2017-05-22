@@ -10,9 +10,9 @@
     </head>
     <body>
         <h1>PeerAssessment</h1>
-       <form:form method="POST" action="save.htm" modelAttribute="pw">
+        <form:form id="wrapper2" method="POST" action="save.htm" modelAttribute="pw">
            <table border="1"> 
-               <tr>
+               <tr id="even">
                <p><h3>enthousiasme en participatie: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -20,7 +20,7 @@
                 </c:forEach>           
             </p>
              </tr>
-             <tr>
+             <tr id="oneven">
             <p><h3>ideeën aanbrengen: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -28,7 +28,7 @@
                 </c:forEach>              
             </p>
              </tr>
-             <tr>
+             <tr id="even">
             <p><h3>inhouden correct en duidelijk kunnen uitleggen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -36,7 +36,7 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr>
+             <tr id="oneven">
             <p><h3>groep organiseren en sturen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -44,15 +44,15 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr>
-            <p>><h3>precisie en nauwkeurigheid:</h3>
+             <tr id="even">
+            <p>><h3>recisie en nauwkeurigheid:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[4].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>        
             </p>
              </tr>
-             <tr>
+             <tr id="even">
             <p><h3>afspraken respecteren:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
