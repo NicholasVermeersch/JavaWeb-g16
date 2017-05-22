@@ -6,7 +6,6 @@
 package service;
 
 import domain.Cursist;
-import java.util.List;
 
 /**
  *
