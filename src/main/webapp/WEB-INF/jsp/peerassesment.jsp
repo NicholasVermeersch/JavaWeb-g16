@@ -10,10 +10,13 @@
         <link rel="stylesheet" type="text/css" href="http://users.hogent.be/~530534jp/style.css">
     </head>
     <body>
-        <h1>PeerAssessment</h1>
+    
         <form:form  method="POST" action="save.htm" modelAttribute="pw">
-           <table border="1"> 
-               <tr >
+            
+           <table id="tablepeer"> 
+               <tr id="trpeer">
+                   <th id="thpeer">Peer Assessement</th>
+               </tr>
                <p><h3>enthousiasme en participatie: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -21,7 +24,7 @@
                 </c:forEach>           
             </p>
              </tr>
-             <tr >
+             <tr id="trpeer">
             <p><h3>ideeën aanbrengen: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -29,7 +32,7 @@
                 </c:forEach>              
             </p>
              </tr>
-             <tr >
+             <tr id="trpeer">
             <p><h3>inhouden correct en duidelijk kunnen uitleggen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -37,7 +40,7 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr >
+             <tr id="trpeer">
             <p><h3>groep organiseren en sturen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -45,7 +48,7 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr >
+             <tr id="trpeer">
             <p>><h3>recisie en nauwkeurigheid:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -53,7 +56,7 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr>
+             <tr id="trpeer">
             <p><h3>afspraken respecteren:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
@@ -63,10 +66,10 @@
              </tr>
             </table>
             <p>
-                <input type="submit" value="save"/>           
+                <input id="button" type="submit" value="save"/>           
             </p>
             <p>
-                <input type="submit" value="bevestig" />           
+                <input id="button" type="submit" value="bevestig" />           
             </p>
 
         </form:form>

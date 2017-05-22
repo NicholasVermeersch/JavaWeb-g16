@@ -114,20 +114,27 @@ h4{
    background-size:cover;
 }
 
-table {
+#tablepeer{
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+thpeer, tdpeer {
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+trpeer:nth-child(even){background-color: #f2f2f2}
 
-th {
+thpeer {
     background-color: skyblue;
     color: white;
+}
+
+#button{
+    border:none;
+    padding:3px;
+    background-color: skyblue;
+    
 }
 
