@@ -10,9 +10,9 @@
     </head>
     <body>
         <c:forEach var="item" items="${peers}">
-            ${item.voor.name}
+            <p>${item.voor.name}</p>
             <c:forEach var="antw" items="${item.antwoorden}">
-                ${antw.antwoord}
+                <p>  ${antw.antwoord}</p>
             </c:forEach>
 
         </c:forEach>
