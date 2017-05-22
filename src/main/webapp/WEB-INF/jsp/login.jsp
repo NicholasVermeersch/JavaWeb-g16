@@ -13,7 +13,7 @@
         <div id="logo"></div>
         <div id="login-box">
 
-            <h3>Welkom bij Give A Day</h3>
+            <h2>Welkom bij Give A Day</h2>
 
             <c:if test="${not empty error}">
                 <div class="error">${error}</div>

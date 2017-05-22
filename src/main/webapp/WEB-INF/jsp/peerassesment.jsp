@@ -53,7 +53,7 @@
                 </c:forEach>        
             </p>
              </tr>
-             <tr id="even">
+             <tr>
             <p><h3>afspraken respecteren:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
