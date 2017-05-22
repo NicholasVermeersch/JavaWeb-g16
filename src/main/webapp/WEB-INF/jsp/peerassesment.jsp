@@ -13,58 +13,63 @@
     
         <form:form  method="POST" action="save.htm" modelAttribute="pw">
             
-           <table id="tablepeer"> 
-               <tr id="trpeer">
-                   <th id="thpeer">Peer Assessement</th>
-               </tr>
-               <p><h3>enthousiasme en participatie: </h3>
+            <div id="even">
+                 <p><h3>enthousiasme en participatie: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[0].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>           
             </p>
-             </tr>
-             <tr id="trpeer">
-            <p><h3>ideeën aanbrengen: </h3>
+            </div>
+               
+            </div>
+            <div id="oneven">
+                <p><h3>ideeën aanbrengen: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[1].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>              
             </p>
-             </tr>
-             <tr id="trpeer">
-            <p><h3>inhouden correct en duidelijk kunnen uitleggen:</h3>
+            </div>   
+            
+            <div id="even">
+                <p><h3>inhouden correct en duidelijk kunnen uitleggen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[2].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>        
             </p>
-             </tr>
-             <tr id="trpeer">
-            <p><h3>groep organiseren en sturen:</h3>
+            </div>
+            
+            
+            <div id="oneven">
+                <p><h3>groep organiseren en sturen:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                    <form:radiobuttons path="peerassesments[${status.index}].antwoorden[3].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>        
             </p>
-             </tr>
-             <tr id="trpeer">
-            <p>><h3>recisie en nauwkeurigheid:</h3>
+            </div>
+            
+            <div id="even">
+                <p>><h3>recisie en nauwkeurigheid:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[4].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>        
             </p>
+            </div>
+            
              </tr>
-             <tr id="trpeer">
-            <p><h3>afspraken respecteren:</h3>
+             <div id="oneven">
+                 <p><h3>afspraken respecteren:</h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
                     <p>${peer.voor.name}</p>
                     <form:radiobuttons path="peerassesments[${status.index}].antwoorden[5].antwoord" items="${antwoorden}"/><br/>
                 </c:forEach>        
             </p>
-             </tr>
-            </table>
+             </div>
+            
             <p>
                 <input id="button" type="submit" value="save"/>           
             </p>
