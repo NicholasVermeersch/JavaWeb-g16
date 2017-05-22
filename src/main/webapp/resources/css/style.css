@@ -124,6 +124,21 @@ h4{
 }
 
 #even{
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    margin-top:3px;
+    padding:5px;
+}
+
+#peerassesment{
+    width: 100%;
+    background-color:skyblue;
+    color:white;
+    text-align: center;
+}
+
+#form{
+    width: auto;
+    margin:10px auto;
+    border:1px solid black;
 }
 

@@ -11,8 +11,8 @@
     </head>
     <body>
     
-        <form:form  method="POST" action="save.htm" modelAttribute="pw">
-            
+        <form:form id="form" method="POST" action="save.htm" modelAttribute="pw">
+            <div id="titel">Peerassesment</div>
             <div id="even">
                  <p><h3>enthousiasme en participatie: </h3>
                 <c:forEach items="${pw.peerassesments}" var="peer" varStatus="status">
